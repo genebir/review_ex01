@@ -7,6 +7,7 @@ public class SongApp {
 
     List<SongVO> songList = new ArrayList<SongVO>();
     public static void main(String[] args) {
+        SongController cont = new SongController();
 
     }
 

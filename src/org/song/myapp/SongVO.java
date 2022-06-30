@@ -7,6 +7,16 @@ public class SongVO {
     private String singer;
     private String genre;
 
+    public SongVO(String title, String singer, String genre) {
+        this.title = title;
+        this.singer = singer;
+        this.genre = genre;
+    }
+
+    public SongVO() {
+        this("","","");
+    }
+
     public String getSinger() {
         return singer;
     }
