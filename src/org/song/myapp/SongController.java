@@ -29,7 +29,7 @@ public class SongController {
         String title = sc.next();
 
         for(int i=0; i<list.size(); i++) {
-            if(list.get(i).getTitle() == title) {
+            if(list.get(i).getTitle().equals(title)) {
                 System.out.println(list.get(i));
             }
         }
@@ -40,7 +40,7 @@ public class SongController {
         String title = sc.next();
 
         for(SongVO vo : list) {
-            if(vo.getTitle() == title) {
+            if(vo.getTitle().equals(title)) {
                 System.out.println("변경하실 제목을 입력하세요");
                 vo.setTitle(sc.next());
             }
@@ -52,7 +52,7 @@ public class SongController {
         String title = sc.next();
 
         for(SongVO vo : list) {
-            if(vo.getTitle()==title) {
+            if(vo.getTitle().equals(title)) {
                 list.remove(list.indexOf(vo));
             }
         }

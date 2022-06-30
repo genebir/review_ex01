@@ -43,11 +43,10 @@ public class SongVO {
 
     @Override
     public String toString() {
-        return "SongController{" +
-                "title='" + title + '\'' +
-                ", singer='" + singer + '\'' +
-                ", genre='" + genre + '\'' +
-                '}';
+        return
+                "제목: " + title +
+                "  가수명: " + singer +
+                "  장르: " + genre ;
     }
 
     @Override
